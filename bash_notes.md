@@ -7,14 +7,14 @@
 	< --> input
 	| --> pass output to another output
 	\ defines key words as key words
-# Basic commands
 
+# Basic commands
     echo --> output message
 	cat --> display content of a file
 	ls --> list of directories and files
-	cd --> switch directory
+	cd --> change directory
 	cp --> copy files 
-	mv --> moving
+	mv --> move a file or directory
 	rm --> remove files
 	pwd--> present working directory
 	mkdir --> new dir
@@ -23,7 +23,7 @@
 	man --> manual
 	cut --> cut lines 
 	paste --> merge files vertically (adds columns)
-	sort --> Sort text files.  
+	sort --> Sort text files.
 	head --> glims of data (10)
 	tail --> glims of data (10)
 	who --> current user
@@ -33,30 +33,29 @@
 	wc --> number of chars
 
 # Bash: Types of Paths
-
  - Relative path --> with respect to the current directory
- - Absolute path --> static path (from root directory) 
+ - Absolute path --> static path (from root directory)
 
 # Execute Bash Scripts - chmod & chown
-
     cd ./<shell.sh> --> execute scripts and shells
-	-->  best practice use 664
-	--> 777 full access
-	-->permision on files
-	-->permision on directory
-	-->ls -lrt -a see hidden files
-	-->ls -r
-	-->ls -l
-	-->ls -t
-	-->ls -a
+	permision on files & permision on directory
 	chmod user-group-others
-	chown: Change owner, change the user and/or group ownership of each given File to a new Owner.  
+	chown: Change owner, change the user and/or group ownership of each given File to a new Owner.
 	4 --> read
 	2 --> write
-	1 --> execute
+	1 --> execute 
+For best practices:
+ - When creating a file use chmod 644
+ - When creating a directory use
+   chomod 755
+
+# List Storage options (ls)
+	-->ls -r or --reverse: reverse order while sorting
+	-->ls -l: use long listing format
+	-->ls -t: sorts by modification time, newest first
+	-->ls -a or --all: do not ignore entries straing with a dot (.)
 
 # vi Text Editor
-
     Text editor vi <file name> -->creats content or opens file
 	command mode --> view
 	insert mode --> add or update --> i
@@ -79,8 +78,6 @@ $? stores the last successful output = 0
 
  how ro run shell script:
 > sh <filename.extension>
-
- 
 
 ## QUOTES
 
