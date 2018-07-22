@@ -31,6 +31,7 @@
 	grep --> Search file(s) for specific text.
 	find --> Search a folder hierarchy for filename(s) that meet a desired criteria: Name, Size, File Type
 	wc --> number of chars
+	file --> determine file type
 
 # Bash: Types of Paths
  - Relative path --> with respect to the current directory
