@@ -133,3 +133,5 @@ $? stores the last successful output = 0
 
  rm -f force remove
  rm -r Remove directories and their contents recursively
+
+ useful reference link: https://explainshell.com/
