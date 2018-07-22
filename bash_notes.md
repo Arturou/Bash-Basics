@@ -51,11 +51,18 @@ For best practices:
    chomod 755
 
 # List Storage options (ls)
-	-->ls -r or --reverse: reverse order while sorting
-	-->ls -l: use long listing format
-	-->ls -t: sorts by modification time, newest first
-	-->ls -a or --all: do not ignore entries straing with a dot (.)
 
+ - **ls -r** or **--reverse**: reverse order while sorting 
+ - **ls -l**: use long listing format 
+ -  **ls -t**: sorts by modification time, newest first 
+ - **ls -a** or **--all**: do not ignore entries straing with a dot (.)
+
+# File command options (file)
+
+ - **file -b [fileName]** :  determine file type and doesn't prepend file names to output lines (brief mode)
+ - **file -F '|' [fileName]** : determine file type and uses the specified string as the separator between the file name and the file result returned. Defaults to ':'.
+ - **file -f [fileName]** : determine file type and Reads the names of the files to be examined from **namefile** (one per line) before the argument list.
+ - **file -z [fileName]** : determine file type and looks inside compressed files.
 # vi Text Editor
     Text editor vi <file name> -->creats content or opens file
 	command mode --> view
@@ -80,12 +87,14 @@ $? stores the last successful output = 0
  how ro run shell script:
 > sh <filename.extension>
 
+# Bash Scripting
+
 ## QUOTES
 
  - '' print text as it is (static)  
  - "" insert variables (dynamic) command substitution
 
-# if in Bash
+## if in Bash
 
      if <condition>;then
 
@@ -95,7 +104,7 @@ $? stores the last successful output = 0
 
  
 
-# For loop in Bash
+## For loop in Bash
 
     for <variable> in 1 2 3 4..n
 	 do
@@ -107,7 +116,7 @@ $? stores the last successful output = 0
 		echo <variable>
 	 done
 
-# While Loop in Bash
+## While Loop in Bash
 
      while read:
 	 do
@@ -118,7 +127,7 @@ $? stores the last successful output = 0
 
 ## Extra Stuff
 
- ((  )) --> execute expression
+ ((  )) --> execute expression in bash scripting
 
  Best practice is to always remove a file and create modified version
 
